@@ -1,4 +1,4 @@
-import { getRandomNumber } from './util.js';
+import { getRandomNumber, isStringInSize } from './util.js';
 
 function createPost(id){
   return {
@@ -10,12 +10,10 @@ function createPost(id){
   };
 }
 
-function createPosts(quantity){
+export function createPosts(quantity){
   const posts = [];
   for (let i = 1; i <= quantity; i++) {
     posts[i-1] = createPost(i);
   }
   return posts;
 }
-
-export { createPosts };
