@@ -1,9 +1,11 @@
 import './data.js';
 import './render.js';
-import './utils.js';
+import './util.js';
 
 import './form.js';
 import './form-validation.js';
+import './scaling.js';
+import './effect.js';
 import {createPosts} from './data.js';
 import {renderThumbnails} from './render.js';
 

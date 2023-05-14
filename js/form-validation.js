@@ -1,4 +1,4 @@
-import { isStringInSize } from './utils.js';
+import { isStringInSize } from './util.js';
 
 const form = document.querySelector('.img-upload__form');
 const pristine  = new Pristine(form, {
