@@ -1,5 +1,3 @@
-import { createPosts } from './data.js';
-
-const posts = createPosts(25);
-
-console.log(posts);
+import './data.js';
+import './render.js';
+import './utils.js';
