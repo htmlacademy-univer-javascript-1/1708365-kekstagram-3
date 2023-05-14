@@ -268,6 +268,157 @@
     background-position: -5px -31px;
   }
 
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.scale__control--value {
+  width: 60px;
+
+  font-size: 16px;
+  color: #ffffff;
+
+  border: solid rgba(255, 255, 255, 0.5);
+  border-width: 0 2px;
+}
+
+.scale__control--bigger {
+  border-radius: 0 50% 50% 0;
+}
+
+.scale__control--bigger::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: 20px;
+  line-height: 0;
+  color: #ffffff;
+
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+
+/**
+ * Превью изображения
+ */
+
+.img-upload__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+
+  width: 600px;
+  height: 600px;
+
+  background-color: #ffffff;
+}
+
+.img-upload__preview img {
+  display: block;
+  max-width: 600px;
+  max-height: 600px;
+}
+
+
+/**
+ * Шкала регулирования глубины фильтра
+ */
+
+.effect-level {
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+
+  padding: 7px 11px 0;
+
+  width: 495px;
+  height: 34px;
+
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  white-space: nowrap;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 34px;
+
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.effect-level .noUi-target {
+  border-radius: 16px;
+}
+
+.effect-level .noUi-connects {
+  border-radius: 13px;
+}
+
+.effect-level .noUi-connect {
+  background: #ffe753;
+}
+
+.effect-level__value {
+  display: none;
+}
+
+
+/**
+ * Блок с эффектами, которые можно применить к изображению
+ */
+
+.effects {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.effects__list {
+  margin: 0;
+  padding: 0;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+
+  list-style: none;
+  text-align: center;
+}
+
+.effects__item {
+  margin-right: 5px;
+}
+
+.effects__label {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.effects__label:hover,
+.effects__label:focus,
+.effects__radio:checked + .effects__label {
+  color: #ffe753;
+}
+
 
   /* Поле для загрузки нового изображения
      ========================================================================== */
