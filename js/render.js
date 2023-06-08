@@ -14,3 +14,4 @@ export function renderThumbnails(getObjects) {
   });
   container.appendChild(picturesFragment);
 }
+
