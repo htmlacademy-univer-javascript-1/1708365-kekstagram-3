@@ -1,4 +1,4 @@
-import {isEscapeKey} from './utils.js';
+import {isEscapeKey} from './util.js';
 
 const inputPicture = document.querySelector('#upload-file');
 const cancelButton = document.querySelector('#upload-cancel');
