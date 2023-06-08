@@ -12,3 +12,4 @@ export function renderThumbnails(photos) {
   }
   container.appendChild(pictureFragment);
 }
+
